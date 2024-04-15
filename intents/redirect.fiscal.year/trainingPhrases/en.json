@@ -1,0 +1,57 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "I am interested to know about ",
+      "auto": true
+    }, {
+      "text": "Experian",
+      "parameterId": "competitors",
+      "auto": true
+    }, {
+      "text": " revenue in ",
+      "auto": true
+    }, {
+      "text": "2024",
+      "parameterId": "fiscal_year"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How much growth is expected for Income and Employment Verifications in ",
+      "auto": true
+    }, {
+      "text": "2024",
+      "parameterId": "fiscal_year"
+    }, {
+      "text": " for ",
+      "auto": true
+    }, {
+      "text": "Experian",
+      "parameterId": "competitors",
+      "auto": true
+    }, {
+      "text": "?",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I am interested to know about ",
+      "auto": true
+    }, {
+      "text": "TransUnion",
+      "parameterId": "competitors",
+      "auto": true
+    }, {
+      "text": " revenue in ",
+      "auto": true
+    }, {
+      "text": "2024",
+      "parameterId": "fiscal_year"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

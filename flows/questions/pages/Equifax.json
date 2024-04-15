@@ -1,0 +1,28 @@
+{
+  "name": "294ef1b8-ba5e-4a48-8aa9-f009edf3bba8",
+  "displayName": "Equifax",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Sound good, what is your question?" ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "redirect.firstpage",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Thank you $session.params.name, for contacting EFX-FinSmart! Have a nice day!" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "End Session",
+    "name": "f777abd6-63f0-41ee-8ca5-77ef83d3ff22"
+  } ]
+}

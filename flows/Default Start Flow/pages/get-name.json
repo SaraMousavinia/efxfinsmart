@@ -1,0 +1,156 @@
+{
+  "name": "b60becd4-8067-4a93-abc9-920e7333309e",
+  "displayName": "get-name",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Hello! I am EFX-FinSmart Virtual assistant. May I know whom I am chatting with ?" ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "redirect.competitors.questions",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "catalog",
+    "name": "2900e21c-34a8-4107-912e-1e6429d728e6"
+  }, {
+    "intent": "redirect.stakeholders.questions",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "catalog",
+    "name": "e5fe21c6-36a0-48f7-b273-df43b0c64be1"
+  }, {
+    "intent": "redirect.end",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Thank you $session.params.name, for contacting EFX-FinSmart! Have a nice day!" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "End Session",
+    "name": "e20f070d-f73a-4ab9-9b44-919c181bd5e3"
+  }, {
+    "intent": "redirect.competitors.overview",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "catalog",
+    "name": "6d0b6196-cd5a-4374-943a-c3135d3bfa9e"
+  }, {
+    "intent": "redirect.stakeholders.overview",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "catalog",
+    "name": "e1ef0cef-b4d0-41a7-b899-2abfd7a4f9f9"
+  }, {
+    "intent": "get-name",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I hope you're having a wonderful day, $session.params.name ! Thanks for reaching out to EFX-FinSmart. I can answer your questions about our competitors and stakeholders. Throughout the conversation, you can say \"exit\" to return to this menu.\nHow may I help you today?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "payload": {
+          "richContent": [ [ {
+            "options": [ {
+              "text": "Competitors"
+            }, {
+              "text": "Stakeholders"
+            } ],
+            "type": "chips"
+          } ] ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "733bc6f6-2761-446e-8a71-9e75059be214"
+  }, {
+    "condition": "$session.params.restart = \"true\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Welcome back, this is EFX-FinSmart Virtual assistant. What are your areas of interest to ask about?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "payload": {
+          "richContent": [ [ {
+            "options": [ {
+              "text": "Competitores"
+            }, {
+              "text": "Stakeholders"
+            } ],
+            "type": "chips"
+          } ] ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "7e2ee093-ea0d-4497-95b3-f0b03d089cf5"
+  }, {
+    "condition": "$session.params.competitors = \"Experian\" OR $session.params.competitors = \"TransUnion\" OR $session.params.competitors = \"Equifax\" OR $session.params.competitors = \"USBank\" OR $session.params.competitors = \"Wells Fargo\" OR $session.params.competitors = \"Bank of America\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "questions",
+    "name": "8cf0d362-a082-4653-ad5d-8cfb953e0583"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, I didnt get that. I can answer your questions about our competitors and stakeholders. \nHow may I help you today?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "payload": {
+          "richContent": [ [ {
+            "options": [ {
+              "text": "Competitors"
+            }, {
+              "text": "Stakeholders"
+            } ],
+            "type": "chips"
+          } ] ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "e47c17e6-e717-4c10-bd82-1863992d5860"
+  }, {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, I didnt get that. I can answer your questions about our competitors and stakeholders. \nHow may I help you today?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "payload": {
+          "richContent": [ [ {
+            "options": [ {
+              "text": "Competitors"
+            }, {
+              "text": "Stakeholders"
+            } ],
+            "type": "chips"
+          } ] ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "37f76e1b-5f4a-4be4-a2e2-a1d947c50b50"
+  } ]
+}

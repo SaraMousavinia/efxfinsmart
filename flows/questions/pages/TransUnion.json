@@ -1,0 +1,38 @@
+{
+  "name": "5643a525-4b7a-45e6-b189-de969433b37d",
+  "displayName": "TransUnion",
+  "form": {
+    "parameters": [ {
+      "displayName": "competitors",
+      "required": true,
+      "entityType": "@competitors",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        }
+      },
+      "redact": true
+    } ]
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Sound good, what is your question?" ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "redirect.firstpage",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Thank you $session.params.name, for contacting EFX-FinSmart! Have a nice day!" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "End Session",
+    "name": "b7d1346f-0967-490d-8357-1b2083903a65"
+  } ]
+}

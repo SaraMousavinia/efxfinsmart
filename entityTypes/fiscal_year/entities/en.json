@@ -1,0 +1,23 @@
+{
+  "entities": [ {
+    "value": "2024",
+    "synonyms": [ "2024", "24" ],
+    "languageCode": "en"
+  }, {
+    "value": "2023",
+    "synonyms": [ "2023", "23" ],
+    "languageCode": "en"
+  }, {
+    "value": "2022",
+    "synonyms": [ "2022", "22" ],
+    "languageCode": "en"
+  }, {
+    "value": "2021",
+    "synonyms": [ "2021", "21" ],
+    "languageCode": "en"
+  }, {
+    "value": "2020",
+    "synonyms": [ "20", "2020" ],
+    "languageCode": "en"
+  } ]
+}

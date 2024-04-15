@@ -1,0 +1,11 @@
+{
+  "name": "fb4ccf97-512f-4d27-9cfa-78921af606f1",
+  "displayName": "redirect.stakeholders.questions",
+  "parameters": [ {
+    "id": "stakeholders",
+    "entityType": "@Stakeholders"
+  } ],
+  "priority": 500000,
+  "description": "stakeholders overview: the stakeholders supported by the bot",
+  "numTrainingPhrases": 4
+}

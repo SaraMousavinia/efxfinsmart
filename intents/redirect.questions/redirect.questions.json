@@ -1,0 +1,25 @@
+{
+  "name": "6d9fbc4f-fc82-4b84-a9b7-c5cb650451ae",
+  "displayName": "redirect.questions",
+  "parameters": [ {
+    "id": "competitors",
+    "entityType": "@competitors"
+  }, {
+    "id": "fiscal_year",
+    "entityType": "@fiscal_year"
+  }, {
+    "id": "stakeholders",
+    "entityType": "@Stakeholders"
+  }, {
+    "id": "geo-country",
+    "entityType": "@sys.geo-country"
+  }, {
+    "id": "date-period",
+    "entityType": "@sys.date-period"
+  }, {
+    "id": "date-time",
+    "entityType": "@sys.date-time"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 11
+}

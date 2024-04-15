@@ -1,0 +1,76 @@
+{
+  "name": "d0a5f46c-3971-4cdf-bb5d-0da172784930",
+  "displayName": "competitors overview",
+  "form": {
+    "parameters": [ {
+      "displayName": "efx",
+      "required": true,
+      "entityType": "@efx",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        }
+      },
+      "redact": true
+    }, {
+      "displayName": "Stakeholders",
+      "required": true,
+      "entityType": "@Stakeholders",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        }
+      },
+      "redact": true
+    } ]
+  },
+  "entryFulfillment": {
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "$intent.params.efx != null",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "EFX-FinSmart has three main competitors. Equifax, Experian, and TransUnion. Would you like to know about competitors? if yes, type the name of the competitor to proceed, otherwise \"no\" to go back to the main menu." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.stakeholders != null",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "EFX-FinSmart has three main stakeholders. US.Bank, Bank of America, and Wells Fargo. Would you like to know about stakeholders? if yes, type the name of the stakeholder to proceed, otherwise \"no\" to go back to the main menu." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "It looks like something went wrong with your question. You can say \"Reset\", to restart the process." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "confirm.proceed.question",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Confirmation",
+    "name": "a565e5db-16f5-43a7-b51f-b59f7d6ab551"
+  }, {
+    "intent": "decline.proceed.question",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Previous Page",
+    "name": "70053ac3-c450-42b5-a963-e19c05874fa7"
+  } ]
+}

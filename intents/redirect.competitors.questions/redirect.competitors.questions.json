@@ -1,0 +1,20 @@
+{
+  "name": "26c0aecd-e902-4c28-b293-4680ae3fad36",
+  "displayName": "redirect.competitors.questions",
+  "parameters": [ {
+    "id": "competitors",
+    "entityType": "@competitors"
+  }, {
+    "id": "fiscal_year",
+    "entityType": "@fiscal_year"
+  }, {
+    "id": "date-time",
+    "entityType": "@sys.date-time"
+  }, {
+    "id": "date-period",
+    "entityType": "@sys.date-period"
+  } ],
+  "priority": 500000,
+  "description": "competitors overview: the competitors supported by the bot",
+  "numTrainingPhrases": 29
+}

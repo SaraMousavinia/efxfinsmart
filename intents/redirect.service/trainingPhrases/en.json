@@ -1,0 +1,132 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "I have a question about ",
+      "auto": true
+    }, {
+      "text": "Bank of America",
+      "parameterId": "banks",
+      "auto": true
+    }, {
+      "text": "?",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I have a question about ",
+      "auto": true
+    }, {
+      "text": "Wells Fargo",
+      "parameterId": "banks",
+      "auto": true
+    }, {
+      "text": "?",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I have a question about ",
+      "auto": true
+    }, {
+      "text": "US bank",
+      "parameterId": "banks",
+      "auto": true
+    }, {
+      "text": "?",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I have a question about ",
+      "auto": true
+    }, {
+      "text": "TransUnion",
+      "parameterId": "companies",
+      "auto": true
+    }, {
+      "text": "?",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I have a question about "
+    }, {
+      "text": "Experian",
+      "parameterId": "companies"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I have a question about "
+    }, {
+      "text": "Equifax",
+      "parameterId": "companies",
+      "auto": true
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can I ask about ",
+      "auto": true
+    }, {
+      "text": "US bank",
+      "parameterId": "banks",
+      "auto": true
+    }, {
+      "text": "?",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can I ask about ",
+      "auto": true
+    }, {
+      "text": "TransUnion",
+      "parameterId": "companies",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can I ask about ",
+      "auto": true
+    }, {
+      "text": "Equifax",
+      "parameterId": "companies",
+      "auto": true
+    }, {
+      "text": "?",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can I ask about "
+    }, {
+      "text": "Experian",
+      "parameterId": "companies"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

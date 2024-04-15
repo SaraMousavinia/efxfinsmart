@@ -1,0 +1,13 @@
+{
+  "name": "cf3e6e4f-121e-481b-8056-eb4405c1757d",
+  "displayName": "redirect.service",
+  "parameters": [ {
+    "id": "companies",
+    "entityType": "@competitors"
+  }, {
+    "id": "banks",
+    "entityType": "@Stakeholders"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 10
+}

@@ -1,0 +1,20 @@
+{
+  "name": "db8d8676-4ca2-4222-81d4-ff921e39dd5b",
+  "displayName": "prebuilt_components_credit_card_enrollment:get_account_details",
+  "genericWebService": {
+    "uri": "https://www.example.com",
+    "webhookType": "FLEXIBLE",
+    "httpMethod": "POST",
+    "requestBody": "{\n  \"phone_number\": \"$session.params.phone_number\",\n  \"fulfillmentInfo\": {\n    \"tag\": \"getAccount\"\n  }\n}",
+    "parameterMapping": [ {
+      "key": "$flow.credit_score",
+      "value": "credit_score"
+    }, {
+      "key": "account_count",
+      "value": "account_count"
+    } ]
+  },
+  "timeout": {
+    "seconds": 5
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "70ac3d4d-5fb2-49ec-8bb8-4a653a252fd1",
+  "displayName": "redirect.competitors",
+  "parameters": [ {
+    "id": "companies",
+    "entityType": "@competitors"
+  }, {
+    "id": "fiscal_year",
+    "entityType": "@fiscal_year"
+  }, {
+    "id": "geo-country",
+    "entityType": "@sys.geo-country"
+  } ],
+  "priority": 500000,
+  "description": "competitors: Competitors that are supported by the bot",
+  "numTrainingPhrases": 12
+}

@@ -1,0 +1,56 @@
+{
+  "name": "07c4e281-74b5-474e-b3b3-74213079389c",
+  "displayName": "Experian",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Sound good, what is your question?" ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "redirect.questions",
+    "triggerFulfillment": {
+      "messages": [ {
+        "languageCode": "en",
+        "knowledgeInfoCard": {
+          "maximumSnippets": 1
+        }
+      } ]
+    },
+    "name": "d9784a08-7f5c-4b85-a9a5-32295122a92a"
+  }, {
+    "intent": "redirect.firstpage",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Thank you $session.params.name, for contacting EFX-FinSmart! Have a nice day!" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "End Session",
+    "name": "3b6e4615-96a7-4d3b-84a4-d49c39b0c992"
+  } ],
+  "knowledgeConnectorSettings": {
+    "enabled": true,
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "$request.knowledge.answers[0]" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "dataStoreConnections": [ {
+      "dataStoreType": "UNSTRUCTURED",
+      "dataStore": "projects/113774999957/locations/us/collections/default_collection/dataStores/efx-finsmart-datasource_1711416045800",
+      "languageCode": "en",
+      "documentProcessingMode": "DOCUMENTS"
+    } ]
+  }
+}

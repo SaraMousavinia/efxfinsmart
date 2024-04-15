@@ -1,0 +1,17 @@
+{
+  "name": "ec514e25-5b71-48d7-b85e-d812c2bfd6c1",
+  "displayName": "prebuilt_components_credit_card_enrollment:submit_enroll",
+  "genericWebService": {
+    "uri": "https://www.example.com",
+    "webhookType": "FLEXIBLE",
+    "httpMethod": "POST",
+    "requestBody": "{\n  \"phone_number\": \"$flow.phone_number\",\n  \"zipcode\": \"$flow.zipcode\",\n  \"monthly_salary\": \"$flow.monthly_salary\",\n  \"currency\":\"$flow.currency_name\",\n  \"fulfillmentInfo\": {\n    \"tag\": \"submitEnroll\"\n  }\n}",
+    "parameterMapping": [ {
+      "key": "$flow.request_number",
+      "value": "request_number"
+    } ]
+  },
+  "timeout": {
+    "seconds": 5
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "I am interested in "
+    }, {
+      "text": "Bank of America",
+      "parameterId": "stakeholders",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I am interested in ",
+      "auto": true
+    }, {
+      "text": "Wells Fargo",
+      "parameterId": "stakeholders",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I am interested in ",
+      "auto": true
+    }, {
+      "text": "US Bank",
+      "parameterId": "stakeholders",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Wells Fargo",
+      "parameterId": "stakeholders",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Bank of America",
+      "parameterId": "stakeholders",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "US Bank",
+      "parameterId": "stakeholders",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "what was the revenue for ",
+      "auto": true
+    }, {
+      "text": "us bank",
+      "parameterId": "stakeholders",
+      "auto": true
+    }, {
+      "text": "?",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "tell me about ",
+      "auto": true
+    }, {
+      "text": "Bank of America",
+      "parameterId": "stakeholders",
+      "auto": true
+    }, {
+      "text": "?",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "what are the stakeholders?",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

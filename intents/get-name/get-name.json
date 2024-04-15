@@ -1,0 +1,11 @@
+{
+  "name": "20826d92-d40c-40ca-a55a-34dc0fa73f52",
+  "displayName": "get-name",
+  "parameters": [ {
+    "id": "name",
+    "entityType": "@sys.person",
+    "redact": true
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 3
+}

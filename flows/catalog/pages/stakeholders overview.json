@@ -1,0 +1,160 @@
+{
+  "name": "336effea-6fa4-4059-b12c-3dbc70f29a7a",
+  "displayName": "stakeholders overview",
+  "form": {
+    "parameters": [ {
+      "displayName": "stakeholders-list",
+      "required": true,
+      "entityType": "@Stakeholders",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I missed that. Please specify the name of the stakeholder you are interested in. We have info about US Bank, Bank of America, and Wells Fargo" ]
+              },
+              "languageCode": "en"
+            }, {
+              "payload": {
+                "richContent": [ [ {
+                  "options": [ {
+                    "text": "US Bank"
+                  }, {
+                    "text": "Bank of America"
+                  }, {
+                    "text": "Wells Fargo"
+                  } ],
+                  "type": "chips"
+                } ] ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "3a5f5d18-7814-4ccf-a17b-7283ab58c284"
+        }, {
+          "event": "sys.no-input-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn't understand that. Please specify the name of the stakeholder you are interested in. We have info about US Bank, Bank of America, and Wells Fargo" ]
+              },
+              "languageCode": "en"
+            }, {
+              "payload": {
+                "richContent": [ [ {
+                  "options": [ {
+                    "text": "US Bank"
+                  }, {
+                    "text": "Bank of America"
+                  }, {
+                    "text": "Wells Fargo"
+                  } ],
+                  "type": "chips"
+                } ] ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "5200224d-46fd-4fdd-ba80-4c6058972fe4"
+        } ]
+      },
+      "redact": true
+    }, {
+      "displayName": "fiscal-year",
+      "required": true,
+      "entityType": "@fiscal_year",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Which fiscal year you are interested in? we have data from 2020-2024" ]
+            },
+            "languageCode": "en"
+          }, {
+            "payload": {
+              "richContent": [ [ {
+                "options": [ {
+                  "text": "2024"
+                }, {
+                  "text": "2023"
+                }, {
+                  "text": "2022"
+                }, {
+                  "text": "2021"
+                }, {
+                  "text": "2020"
+                } ],
+                "type": "chips"
+              } ] ]
+            },
+            "languageCode": "en"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-input-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry I didn't get that. Please specify which fiscal year you are interested in? we have data from 2020-2024" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "479c533d-f1fb-495f-9524-125481124d4f"
+        }, {
+          "event": "sys.no-match-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "sorry I missed that. Please specify which fiscal year you are interested in? we have data from 2020-2024" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "f5cf3248-a05d-4525-942a-24d6d6a8d44e"
+        } ]
+      },
+      "redact": true
+    } ]
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "We have data of US Bank, Bank of America, and Wells Fargo. Which one I can help you with?" ]
+      },
+      "languageCode": "en"
+    }, {
+      "payload": {
+        "richContent": [ [ {
+          "options": [ {
+            "text": "US.Bank"
+          }, {
+            "text": "Bank of America"
+          }, {
+            "text": "Wells Fargo"
+          } ],
+          "type": "chips"
+        } ] ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "redirect.firstpage",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Thank you for contacting EFX-FinSmart! Have a nice day!" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "End Session",
+    "name": "43808070-f05d-4fe6-b89f-939517f105ca"
+  } ],
+  "description": "Stakeholder Overview"
+}

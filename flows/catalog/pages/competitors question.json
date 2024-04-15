@@ -1,0 +1,162 @@
+{
+  "name": "ccd1d519-43e4-4dfc-8521-6aebe15557e8",
+  "displayName": "competitors question",
+  "form": {
+    "parameters": [ {
+      "displayName": "competitors",
+      "required": true,
+      "entityType": "@competitors",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Which competitor you need to know about?" ]
+            },
+            "languageCode": "en"
+          }, {
+            "payload": {
+              "richContent": [ [ {
+                "options": [ {
+                  "text": "Equifax"
+                }, {
+                  "text": "Experian"
+                }, {
+                  "text": "TransUnion"
+                } ],
+                "type": "chips"
+              } ] ]
+            },
+            "languageCode": "en"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry I didnt get that. About which competitors you wanna know?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "payload": {
+                "richContent": [ [ {
+                  "options": [ {
+                    "text": "Equifax"
+                  }, {
+                    "text": "Experian"
+                  }, {
+                    "text": "TransUnion"
+                  } ],
+                  "type": "chips"
+                } ] ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "087cccaf-3cd1-48cc-8e94-7c11052bf049"
+        }, {
+          "event": "sys.no-input-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "To go forward, we need to know which competitor you would like to ask about?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "payload": {
+                "richContent": [ [ {
+                  "options": [ {
+                    "text": "Equifax"
+                  }, {
+                    "text": "Experian"
+                  }, {
+                    "text": "TransUnion"
+                  } ],
+                  "type": "chips"
+                } ] ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "ebe7c519-8afb-4044-a5ae-9e6a22a7552c"
+        } ]
+      },
+      "redact": true
+    } ]
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "We have information about Equifax, Experian, and TransUnion. " ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "confirm.proceed.question",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Which competitor are you interested in?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "payload": {
+          "richContent": [ [ {
+            "options": [ {
+              "text": "Equifax"
+            }, {
+              "text": "Experian"
+            }, {
+              "text": "TransUnion"
+            } ],
+            "type": "chips"
+          } ] ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Confirmation",
+    "name": "f5c3eba8-d42f-4ef3-93b0-32d1c42b911b"
+  }, {
+    "intent": "redirect.home",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Flow",
+    "name": "e13e3955-2ed5-4fa4-949e-005079df4773"
+  }, {
+    "intent": "decline.proceed.question",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "restart",
+        "value": true
+      } ]
+    },
+    "targetPage": "End Flow",
+    "name": "ba05402f-d101-40fd-8fd4-9ccea11867f9"
+  }, {
+    "intent": "redirect.firstpage",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Thank you for contacting EFX-FinSmart! Have a nice day!" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "End Session",
+    "name": "9e8043cf-3a33-4117-8255-210ad2d0172f"
+  }, {
+    "condition": "$page.params.status = \"FINAL\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Confirmation",
+    "name": "b19f9a9e-9af0-48b6-bd1d-221f58f60630"
+  } ],
+  "knowledgeConnectorSettings": {
+  
+  },
+  "description": "competitors overview"
+}

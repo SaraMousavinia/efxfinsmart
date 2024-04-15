@@ -1,0 +1,38 @@
+{
+  "name": "8a066ae8-5779-4fa5-b773-e882e812b634",
+  "displayName": "competitors",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "We have information about Equifax, Experian, and TransUnion. " ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I missed that. Please verify the competitor? You can choose Equifax, Experian or TransUnion." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "634e2cdb-7507-4fef-8a69-28ce1a90ed7f"
+  }, {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I am sorry. I could understand the competitor's name. You can choose Experian or TransUnion" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "69ffba5e-7d39-4981-bd23-12102b72846a"
+  } ]
+}

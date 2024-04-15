@@ -1,0 +1,68 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "I dont have a question about ",
+      "auto": true
+    }, {
+      "text": "TransUnion",
+      "parameterId": "competitors",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I dont have a question about ",
+      "auto": true
+    }, {
+      "text": "Experian",
+      "parameterId": "competitors",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I am not interested in ",
+      "auto": true
+    }, {
+      "text": "TransUnion",
+      "parameterId": "competitors",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I am not interested in ",
+      "auto": true
+    }, {
+      "text": "Experian",
+      "parameterId": "competitors",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I am not interested in ",
+      "auto": true
+    }, {
+      "text": "Equifax",
+      "parameterId": "competitors",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I don't have a question about "
+    }, {
+      "text": "Equifax",
+      "parameterId": "competitors",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

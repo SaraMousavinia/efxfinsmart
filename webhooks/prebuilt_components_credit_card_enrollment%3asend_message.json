@@ -1,0 +1,17 @@
+{
+  "name": "2b7c1c03-90cf-4242-ba70-5a2bf69e350d",
+  "displayName": "prebuilt_components_credit_card_enrollment:send_message",
+  "genericWebService": {
+    "uri": "https://www.example.com",
+    "webhookType": "FLEXIBLE",
+    "httpMethod": "POST",
+    "requestBody": "{\n  \"phone_number\": \"$session.params.phone_number\",\n  \"channel\": \"$flow.channel\",\n  \"card_name\": \"$flow.selected_card_name\",\n  \"fulfillmentInfo\": {\n    \"tag\": \"sendMessage\"\n  }\n}",
+    "parameterMapping": [ {
+      "key": "$flow.message_sent",
+      "value": "message_sent"
+    } ]
+  },
+  "timeout": {
+    "seconds": 5
+  }
+}

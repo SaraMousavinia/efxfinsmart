@@ -1,0 +1,20 @@
+{
+  "name": "fd48fed9-df5c-4e2a-af64-b7cc0f7ed734",
+  "displayName": "prebuilt_components_credit_card_enrollment:get_available_card",
+  "genericWebService": {
+    "uri": "https://www.example.com",
+    "webhookType": "FLEXIBLE",
+    "httpMethod": "POST",
+    "requestBody": "{\n  \"user_card_category\": \"$flow.expense_category\",\n  \"user_credit_score\": \"$flow.credit_score\",\n  \"fulfillmentInfo\": {\n    \"tag\": \"getCards\"\n  }\n}",
+    "parameterMapping": [ {
+      "key": "$flow.available_card_names",
+      "value": "available_card_names"
+    }, {
+      "key": "$flow.cards_count",
+      "value": "cards_count"
+    } ]
+  },
+  "timeout": {
+    "seconds": 5
+  }
+}

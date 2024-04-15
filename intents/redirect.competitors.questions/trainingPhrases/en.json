@@ -1,0 +1,397 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "How much growth is expected for Income and Employment Verifications for ",
+      "auto": true
+    }, {
+      "text": "Experian",
+      "parameterId": "competitors",
+      "auto": true
+    }, {
+      "text": " in ",
+      "auto": true
+    }, {
+      "text": "2024",
+      "parameterId": "fiscal_year",
+      "auto": true
+    }, {
+      "text": "?",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How many income and employment records are available now in ",
+      "auto": true
+    }, {
+      "text": "Experian",
+      "parameterId": "competitors",
+      "auto": true
+    }, {
+      "text": "?",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Is there any progress with Income Verifications for ",
+      "auto": true
+    }, {
+      "text": "Experian",
+      "parameterId": "competitors",
+      "auto": true
+    }, {
+      "text": " outside of the US?",
+      "auto": true
+    } ],
+    "repeatCount": 2,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How did mortgage ",
+      "auto": true
+    }, {
+      "text": "Experian",
+      "parameterId": "competitors",
+      "auto": true
+    }, {
+      "text": "'s revenue perform in the ",
+      "auto": true
+    }, {
+      "text": "second quarter",
+      "parameterId": "date-period",
+      "auto": true
+    }, {
+      "text": "?",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Was the ",
+      "auto": true
+    }, {
+      "text": "Experian",
+      "parameterId": "competitors",
+      "auto": true
+    }, {
+      "text": "'s EBIT margin for the ",
+      "auto": true
+    }, {
+      "text": "second quarter",
+      "parameterId": "date-period",
+      "auto": true
+    }, {
+      "text": " in line with guidance?",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "What is the value of the ",
+      "auto": true
+    }, {
+      "text": "Experian",
+      "parameterId": "competitors",
+      "auto": true
+    }, {
+      "text": "'s initiated share buyback program and when is it expected to be completed?",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "What will the ",
+      "auto": true
+    }, {
+      "text": "Experian",
+      "parameterId": "competitors",
+      "auto": true
+    }, {
+      "text": "'s LATM consumer business revenue be for the full year?",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Will economic headwinds negatively impact guidance for the second half of the year?",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Is senior management expecting to change guidance in ",
+      "auto": true
+    }, {
+      "text": "the second",
+      "parameterId": "date-time",
+      "auto": true
+    }, {
+      "text": " half?",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Where does the Consumer Services business operate geographically?",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "what was the revenue of EFX in ",
+      "auto": true
+    }, {
+      "text": "2023",
+      "parameterId": "fiscal_year",
+      "auto": true
+    }, {
+      "text": "?",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "what was the revenue for ",
+      "auto": true
+    }, {
+      "text": "Experian",
+      "parameterId": "competitors",
+      "auto": true
+    }, {
+      "text": " in ",
+      "auto": true
+    }, {
+      "text": "2022",
+      "parameterId": "fiscal_year",
+      "auto": true
+    }, {
+      "text": "?",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "what was the revenue of TransUnion in ",
+      "auto": true
+    }, {
+      "text": "2023",
+      "parameterId": "fiscal_year",
+      "auto": true
+    }, {
+      "text": "?",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How much growth is expected for Income and Employment Verifications in ",
+      "auto": true
+    }, {
+      "text": "2024",
+      "parameterId": "fiscal_year",
+      "auto": true
+    }, {
+      "text": " for ",
+      "auto": true
+    }, {
+      "text": "Experian",
+      "parameterId": "competitors",
+      "auto": true
+    }, {
+      "text": "?",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How many income and employment records are available now for ",
+      "auto": true
+    }, {
+      "text": "Experian",
+      "parameterId": "competitors",
+      "auto": true
+    }, {
+      "text": "?",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Is there any progress with Income Verifications outside of the US for ",
+      "auto": true
+    }, {
+      "text": "Experian",
+      "parameterId": "competitors",
+      "auto": true
+    }, {
+      "text": "?",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Equifax",
+      "parameterId": "competitors",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Experian",
+      "parameterId": "competitors",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "TransUnion",
+      "parameterId": "competitors",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I am interested to know about ",
+      "auto": true
+    }, {
+      "text": "Equifax",
+      "parameterId": "competitors",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I am interested to know about ",
+      "auto": true
+    }, {
+      "text": "Experian",
+      "parameterId": "competitors",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I am interested to know about ",
+      "auto": true
+    }, {
+      "text": "TransUnion",
+      "parameterId": "competitors",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How many income and employment records are available now in Experian as of ",
+      "auto": true
+    }, {
+      "text": "2023",
+      "parameterId": "fiscal_year",
+      "auto": true
+    }, {
+      "text": "?",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I would like to know about. "
+    }, {
+      "text": "Equifax",
+      "parameterId": "competitors",
+      "auto": true
+    }, {
+      "text": "'s revenue in "
+    }, {
+      "text": "2023",
+      "parameterId": "fiscal_year"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I would like to know about "
+    }, {
+      "text": "Experian",
+      "parameterId": "competitors",
+      "auto": true
+    }, {
+      "text": "'s revenue in "
+    }, {
+      "text": "2023",
+      "parameterId": "fiscal_year"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I would like to know about "
+    }, {
+      "text": "TransUnion",
+      "parameterId": "competitors",
+      "auto": true
+    }, {
+      "text": "'s revenue in "
+    }, {
+      "text": "2023",
+      "parameterId": "fiscal_year"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I would like to know about ",
+      "auto": true
+    }, {
+      "text": "TransUnion",
+      "parameterId": "competitors",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I would like to know about ",
+      "auto": true
+    }, {
+      "text": "Experian",
+      "parameterId": "competitors",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I would like to know about ",
+      "auto": true
+    }, {
+      "text": "Equifax",
+      "parameterId": "competitors",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

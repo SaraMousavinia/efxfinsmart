@@ -1,0 +1,23 @@
+{
+  "name": "b4b07760-f313-4911-a16a-e292e9dc43b2",
+  "displayName": "prebuilt_components_credit_card_enrollment:get_selected_card",
+  "genericWebService": {
+    "uri": "https://www.example.com",
+    "webhookType": "FLEXIBLE",
+    "httpMethod": "POST",
+    "requestBody": "{\n  \"user_card_category\": \"$flow.expense_category\",\n  \"user_credit_score\": \"$flow.credit_score\",\n  \"card_name\": \"$flow.card_type\",\n  \"fulfillmentInfo\": {\n    \"tag\": \"showCardDetails\"\n  }\n}",
+    "parameterMapping": [ {
+      "key": "$flow.selected_card_annual_fee",
+      "value": "selected_card_annual_fee"
+    }, {
+      "key": "$flow.selected_card_benefits",
+      "value": "selected_card_benefits"
+    }, {
+      "key": "$flow.selected_card_name",
+      "value": "selected_card_name"
+    } ]
+  },
+  "timeout": {
+    "seconds": 5
+  }
+}

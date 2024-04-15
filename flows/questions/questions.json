@@ -1,0 +1,89 @@
+{
+  "name": "1bef748a-cf8e-43c8-8808-1c6e20ebc5c4",
+  "displayName": "questions",
+  "transitionRoutes": [ {
+    "intent": "redirect.competitors",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Experian",
+    "name": "324f0c16-b0a0-45d7-b7ae-04db3648e6c9"
+  }, {
+    "intent": "redirect.competitors",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "TransUnion",
+    "name": "1b065f4d-1053-4d55-b5e5-287a849a6139"
+  }, {
+    "intent": "redirect.end",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Thank you $session.params.name, for contacting EFX-FinSmart! Have a nice day!" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "End Session",
+    "name": "698a9053-261f-488b-9c92-36400be98cc0"
+  }, {
+    "intent": "redirect.home",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "restart",
+        "value": true
+      } ]
+    },
+    "targetPage": "End Flow",
+    "name": "361dc24a-0039-4dc0-8ee1-a014c57d2dbd"
+  }, {
+    "condition": "$session.params.competitors = \"TransUnion\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "TransUnion",
+    "name": "876335ba-cfd5-4906-8898-34684ee7bf56"
+  }, {
+    "condition": "$session.params.competitors = \"Experian\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Experian",
+    "name": "9c1a5750-bb92-4fa6-85a2-625138c9358e"
+  }, {
+    "condition": "$session.params.competitors = \"Equifax\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Equifax",
+    "name": "a7344d00-7e96-495e-a3d7-50a5a8448136"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, I didn't get that. Can you please rephrase?", "I'm sorry, I don't understand. Can you please rephrase?", "I don't understand, please rephrase.", "Sorry, I didn't get that. What was that?", "I didn't get that, can you please rephrase?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "007060a2-1c1e-4e68-800b-2f1fdb90689b"
+  }, {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm sorry, I didn't receive an answer. Can you say it again?", "I missed your answer, can you say it again?", "Sorry, I didn't hear anything. Can you say it again?", "I couldn't hear what you were saying, what was that?", "I'm sorry, I missed your answer. What were you trying to say?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "09bc224a-d559-423b-afd5-24e202613fe7"
+  } ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_ADVANCED",
+    "classificationThreshold": 0.30000001
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "name": "233e2a59-2b0f-47e0-a070-c53938108646",
+  "displayName": "Confirmation",
+  "form": {
+    "parameters": [ {
+      "displayName": "competitors",
+      "required": true,
+      "entityType": "@competitors",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        }
+      },
+      "redact": true
+    } ]
+  },
+  "entryFulfillment": {
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "$session.params.competitors = \"Equifax\"",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "It looks like you have a question about $session.params.competitors , Is that correct?" ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.competitors = \"Experian\"",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "It looks like you have a question about $session.params.competitors , Is that correct?" ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.competitors = \"TransUnion\"",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "It looks like you have a question about $session.params.competitors , Is that correct?" ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "It looks like something went wrong with your question. You can say \"Reset\", to restart the process." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "confirm.proceed.question",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "questions",
+    "name": "95696f83-3ab1-4f61-a0fa-1eb0372a5a1d"
+  }, {
+    "intent": "decline.proceed.question",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "competitors",
+        "value": null
+      }, {
+        "parameter": "stakeholders",
+        "value": null
+      }, {
+        "parameter": "restart",
+        "value": true
+      } ]
+    },
+    "targetPage": "Previous Page",
+    "name": "82b2f663-9575-4e34-963a-855867d78387"
+  }, {
+    "intent": "redirect.firstpage",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Thank you for contacting EFX-FinSmart! Have a nice day!" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "End Session",
+    "name": "1e26a81e-f135-488d-95a4-7f8f90933d9d"
+  } ]
+}

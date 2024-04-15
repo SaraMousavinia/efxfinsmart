@@ -1,0 +1,15 @@
+{
+  "entities": [ {
+    "value": "U.S.Bank",
+    "synonyms": [ "U.S.Bankorp", "US Bank" ],
+    "languageCode": "en"
+  }, {
+    "value": "Bank of America",
+    "synonyms": [ "Bank of America" ],
+    "languageCode": "en"
+  }, {
+    "value": "Wells Fargo",
+    "synonyms": [ "Wells Fargo", "Wells Fargo Corp" ],
+    "languageCode": "en"
+  } ]
+}

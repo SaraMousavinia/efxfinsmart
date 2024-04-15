@@ -1,0 +1,132 @@
+{
+  "name": "40c58bc6-0ffe-4a1e-aad0-f1feb99b00a7",
+  "displayName": "catalog",
+  "transitionRoutes": [ {
+    "intent": "redirect.end",
+    "condition": "$session.params.restart = \"true\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Welcome back, this is EFX-FinSmart Virtual assistant. What are your areas of interest to ask about?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "payload": {
+          "richContent": [ [ {
+            "options": [ {
+              "text": "Competitores"
+            }, {
+              "text": "Stakeholders"
+            } ],
+            "type": "chips"
+          } ] ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "End Flow",
+    "name": "99e8f151-6831-44ec-8d1a-98ef0be821d9"
+  }, {
+    "intent": "redirect.home",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Flow",
+    "name": "62e36041-9a3f-4d24-bb01-7be02877c80e"
+  }, {
+    "intent": "redirect.firstpage",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Thank you for contacting EFX-FinSmart! Have a nice day!" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "e3180383-5527-46db-badb-664e11442ae1"
+  }, {
+    "intent": "redirect.stakeholders.overview",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "competitors overview",
+    "name": "11fdffff-0552-47a9-9c48-bb84d234426d"
+  }, {
+    "intent": "redirect.competitors.questions",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "competitors question",
+    "name": "a9cb4330-8b75-41a7-a942-e9b16bb25fc9"
+  }, {
+    "intent": "redirect.stakeholders.questions",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Confirmation",
+    "name": "4463164e-346f-449d-b26f-a67e1d40e230"
+  }, {
+    "intent": "confirm.proceed.question",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Confirmation",
+    "name": "74390abf-53f5-47f2-a18a-6303245704dc"
+  }, {
+    "intent": "decline.proceed.question",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "restart",
+        "value": true
+      } ]
+    },
+    "targetPage": "End Session",
+    "name": "52cb5b30-e887-4ec8-8325-e6a1455c1b72"
+  }, {
+    "intent": "redirect.competitors.overview",
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "competitors question",
+    "name": "7e2f0c29-6045-490f-94f7-e96c5217d9ef"
+  }, {
+    "condition": "$session.params.restart = \"true\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Welcome back, this is EFX-FinSmart Virtual assistant. What are your areas of interest to ask about?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "a1b64146-6936-4fcf-8e8b-8849a18637ee"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, I didn't get that. Can you please rephrase?", "I'm sorry, I don't understand. Can you please rephrase?", "I don't understand, please rephrase.", "Sorry, I didn't get that. What was that?", "I didn't get that, can you please rephrase?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "1cfb7663-d9a8-42f0-a078-3920fffeeb96"
+  }, {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm sorry, I didn't receive an answer. Can you say it again?", "I missed your answer, can you say it again?", "Sorry, I didn't hear anything. Can you say it again?", "I couldn't hear what you were saying, what was that?", "I'm sorry, I missed your answer. What were you trying to say?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "4209bdbe-6199-41bc-96af-a5c3c32218f9"
+  } ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_ADVANCED",
+    "classificationThreshold": 0.30000001
+  }
+}

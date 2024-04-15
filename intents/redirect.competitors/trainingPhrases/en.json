@@ -1,0 +1,156 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "I am interested to know about ",
+      "auto": true
+    }, {
+      "text": "TransUnion",
+      "parameterId": "companies",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I am interested to know about ",
+      "auto": true
+    }, {
+      "text": "Experian",
+      "parameterId": "companies",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I am interested to know about ",
+      "auto": true
+    }, {
+      "text": "Equifax",
+      "parameterId": "companies",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "TransUnion",
+      "parameterId": "companies",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Experian",
+      "parameterId": "companies",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Equifax",
+      "parameterId": "companies",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Is there any progress with Income Verifications outside of the "
+    }, {
+      "text": "US",
+      "parameterId": "geo-country"
+    }, {
+      "text": " for "
+    }, {
+      "text": "Experian",
+      "parameterId": "companies",
+      "auto": true
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How many income and employment records are available now for "
+    }, {
+      "text": "Experian",
+      "parameterId": "companies"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How much growth is expected for Income and Employment Verifications in "
+    }, {
+      "text": "2024",
+      "parameterId": "fiscal_year"
+    }, {
+      "text": " for "
+    }, {
+      "text": "Experian",
+      "parameterId": "companies",
+      "auto": true
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "what was the revenue of "
+    }, {
+      "text": "TransUnion",
+      "parameterId": "companies",
+      "auto": true
+    }, {
+      "text": " in "
+    }, {
+      "text": "2023",
+      "parameterId": "fiscal_year"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "what was the revenue for "
+    }, {
+      "text": "Experian",
+      "parameterId": "companies",
+      "auto": true
+    }, {
+      "text": " in "
+    }, {
+      "text": "2022",
+      "parameterId": "fiscal_year"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "what was the revenue of "
+    }, {
+      "text": "EFX",
+      "parameterId": "companies",
+      "auto": true
+    }, {
+      "text": " in "
+    }, {
+      "text": "2023",
+      "parameterId": "fiscal_year"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

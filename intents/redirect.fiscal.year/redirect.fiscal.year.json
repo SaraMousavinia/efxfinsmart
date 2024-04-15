@@ -1,0 +1,13 @@
+{
+  "name": "b9911856-3256-4303-bf15-7e274d27f16b",
+  "displayName": "redirect.fiscal.year",
+  "parameters": [ {
+    "id": "competitors",
+    "entityType": "@competitors"
+  }, {
+    "id": "fiscal_year",
+    "entityType": "@fiscal_year"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 3
+}

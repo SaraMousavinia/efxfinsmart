@@ -1,0 +1,16 @@
+{
+  "entities": [ {
+    "value": "Experian",
+    "synonyms": [ "Experian" ],
+    "languageCode": "en"
+  }, {
+    "value": "Transunion",
+    "synonyms": [ "Transunion", "TransUnion" ],
+    "languageCode": "en",
+    "dtmfPattern": "Trans Union"
+  }, {
+    "value": "Equifax",
+    "synonyms": [ "Equifax" ],
+    "languageCode": "en"
+  } ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "d36cf67b-6604-4d16-b6f5-1363e1d1e886",
+  "displayName": "prebuilt_components_credit_card_enrollment:get_card_count",
+  "genericWebService": {
+    "uri": "https://www.example.com",
+    "webhookType": "FLEXIBLE",
+    "httpMethod": "POST",
+    "requestBody": "{\n  \"phone_number\": \"$session.params.phone_number\",\n  \"fulfillmentInfo\": {\n    \"tag\": \"getCardDetails\"\n  }\n}",
+    "parameterMapping": [ {
+      "key": "credit_card_count",
+      "value": "credit_card_count"
+    } ]
+  },
+  "timeout": {
+    "seconds": 5
+  }
+}

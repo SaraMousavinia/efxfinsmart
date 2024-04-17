@@ -72,5 +72,27 @@
     },
     "targetPage": "Previous Page",
     "name": "70053ac3-c450-42b5-a963-e19c05874fa7"
+  }, {
+    "intent": "real-person-business-issue",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I understand you want to talk to a real person. If you have questions about stakeholders you can call DuWayne Milner, 000-000-0000. If you have any question about our competitors you can reach out to Kristen Horst, 999-999-9999. Have a wonderful day $session.params.name!" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "c7b8aa38-d0e2-43c3-830d-f459f1449cad"
+  }, {
+    "intent": "real-person-technical-issue",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I understand you ran into a technical issue. You can reach out to Sara Mousavinia , 888-888-8888. Thanks for contacting us. Have a wonderful day $session.params.name!" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "eb6e86c5-1627-4a45-b775-e84fd5b5fc1a"
   } ]
 }

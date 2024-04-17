@@ -1,0 +1,7 @@
+{
+  "name": "b215b347-cde0-4a1b-958f-23706b1524bc",
+  "displayName": "real-person-business-issue",
+  "priority": 500000,
+  "description": "When user needs to talk to a real person",
+  "numTrainingPhrases": 6
+}

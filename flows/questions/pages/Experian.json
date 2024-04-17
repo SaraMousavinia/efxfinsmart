@@ -20,8 +20,13 @@
         "knowledgeInfoCard": {
           "maximumSnippets": 1
         }
+      } ],
+      "generators": [ {
+        "generator": "projects/glossy-motif-418020/locations/us-central1/agents/712304b6-e8c1-41c1-b6dd-80ddb18703ef/generators/56ada6bb-5455-4756-ab82-635fdaea62cd",
+        "outputParameter": "$request.generative.answer[0]"
       } ]
     },
+    "targetPage": "Experian-response",
     "name": "d9784a08-7f5c-4b85-a9a5-32295122a92a"
   }, {
     "intent": "redirect.firstpage",
@@ -35,22 +40,37 @@
     },
     "targetPage": "End Session",
     "name": "3b6e4615-96a7-4d3b-84a4-d49c39b0c992"
-  } ],
-  "knowledgeConnectorSettings": {
-    "enabled": true,
+  }, {
+    "intent": "redirect.competitors.questions",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Experian-response",
+    "name": "3f7020f5-742a-4217-a0d1-1dd87466214a"
+  }, {
+    "intent": "real-person-business-issue",
     "triggerFulfillment": {
       "messages": [ {
         "text": {
-          "text": [ "$request.knowledge.answers[0]" ]
+          "text": [ "I understand you want to talk to a real person. If you have questions about stakeholders you can call DuWayne Milner, 000-000-0000. If you have any question about our competitors you can reach out to Kristen Horst, 999-999-9999. Have a wonderful day $session.params.name!" ]
         },
         "languageCode": "en"
       } ]
     },
-    "dataStoreConnections": [ {
-      "dataStoreType": "UNSTRUCTURED",
-      "dataStore": "projects/113774999957/locations/us/collections/default_collection/dataStores/efx-finsmart-datasource_1711416045800",
-      "languageCode": "en",
-      "documentProcessingMode": "DOCUMENTS"
-    } ]
+    "name": "b25018bb-0c22-4126-aa0d-78238360be67"
+  }, {
+    "intent": "real-person-technical-issue",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I understand you ran into a technical issue. You can reach out to Sara Mousavinia , 888-888-8888. Thanks for contacting us. Have a wonderful day $session.params.name!" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "432a5958-4e27-4883-b987-1d4cba16ea2a"
+  } ],
+  "knowledgeConnectorSettings": {
+  
   }
 }

@@ -74,7 +74,30 @@
         "languageCode": "en"
       } ]
     },
+    "targetFlow": "catalog",
     "name": "733bc6f6-2761-446e-8a71-9e75059be214"
+  }, {
+    "intent": "real-person-technical-issue",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I understand you ran into a technical issue. You can reach out to Sara Mousavinia , 888-888-8888. Thanks for contacting us. Have a wonderful day $session.params.name!" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "1a4a586f-705b-423b-9a0e-9b455f8da0de"
+  }, {
+    "intent": "real-person-business-issue",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I understand you want to talk to a real person. If you have questions about stakeholders you can call DuWayne Milner, 000-000-0000. If you have any question about our competitors you can reach out to Kristen Horst, 999-999-9999. Have a wonderful day $session.params.name!" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "97b27589-7010-4007-8413-c2392d72d39c"
   }, {
     "condition": "$session.params.restart = \"true\"",
     "triggerFulfillment": {

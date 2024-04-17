@@ -1,9 +1,20 @@
 {
   "fallbackSettings": {
-  
+    "selectedPrompt": "Default"
   },
   "languageCode": "en",
   "knowledgeConnectorSettings": {
-    "business": "EFX"
+    "business": "EFX",
+    "agent": "EFX-FinSmart",
+    "agentIdentity": "Chatbot",
+    "llmModelSettings": {
+    
+    },
+    "mainLlmConfig": {
+      "configSet": "text_bison_001_conversational"
+    }
+  },
+  "llmModelSettings": {
+    "model": "text-bison-001"
   }
 }

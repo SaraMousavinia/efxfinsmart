@@ -148,6 +148,28 @@
     "targetPage": "End Session",
     "name": "9e8043cf-3a33-4117-8255-210ad2d0172f"
   }, {
+    "intent": "real-person-business-issue",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I understand you want to talk to a real person. If you have questions about stakeholders you can call DuWayne Milner, 000-000-0000. If you have any question about our competitors you can reach out to Kristen Horst, 999-999-9999. Have a wonderful day $session.params.name!" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "96ff8a92-ccde-4e35-b9fa-a9cc3f24f97f"
+  }, {
+    "intent": "real-person-technical-issue",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I understand you ran into a technical issue. You can reach out to Sara Mousavinia , 888-888-8888. Thanks for contacting us. Have a wonderful day $session.params.name!" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "301281ee-1a53-45ab-ba16-ffb4d90615bd"
+  }, {
     "condition": "$page.params.status = \"FINAL\"",
     "triggerFulfillment": {
     

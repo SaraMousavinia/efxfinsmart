@@ -14,6 +14,17 @@
     "targetPage": "get-name",
     "name": "2acc664a-3811-4421-8a45-ae932c278039"
   }, {
+    "intent": "redirect.firstpage",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Thank you for contacting EFX-FinSmart! Have a nice day!" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "9a85af69-f615-4b03-8cb1-84b5e3197c61"
+  }, {
     "condition": "true",
     "triggerFulfillment": {
     
@@ -71,7 +82,7 @@
     },
     "dataStoreConnections": [ {
       "dataStoreType": "UNSTRUCTURED",
-      "dataStore": "projects/113774999957/locations/us/collections/default_collection/dataStores/experian-2024_1712538058559",
+      "dataStore": "projects/113774999957/locations/us/collections/default_collection/dataStores/efx-finsmart-datasource_1711416045800",
       "languageCode": "en",
       "documentProcessingMode": "DOCUMENTS"
     } ]

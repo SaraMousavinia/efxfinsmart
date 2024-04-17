@@ -91,6 +91,28 @@
     "targetPage": "competitors question",
     "name": "7e2f0c29-6045-490f-94f7-e96c5217d9ef"
   }, {
+    "intent": "real-person-business-issue",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I understand you want to talk to a real person. If you have questions about stakeholders you can call DuWayne Milner, 000-000-0000. If you have any question about our competitors you can reach out to Kristen Horst, 999-999-9999. Have a wonderful day $session.params.name!" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "b075064d-89bd-47ae-aee1-e6e37ab9cd93"
+  }, {
+    "intent": "real-person-technical-issue",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I understand you ran into a technical issue. You can reach out to Sara Mousavinia , 888-888-8888. Thanks for contacting us. Have a wonderful day $session.params.name!" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "669ab2f3-9247-4e3a-90a3-96607895abb3"
+  }, {
     "condition": "$session.params.restart = \"true\"",
     "triggerFulfillment": {
       "messages": [ {
@@ -107,7 +129,19 @@
     "triggerFulfillment": {
       "messages": [ {
         "text": {
-          "text": [ "Sorry, I didn't get that. Can you please rephrase?", "I'm sorry, I don't understand. Can you please rephrase?", "I don't understand, please rephrase.", "Sorry, I didn't get that. What was that?", "I didn't get that, can you please rephrase?" ]
+          "text": [ "Sorry, I didnt get that. I can answer your questions about our competitors and stakeholders. \nHow may I help you today?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "payload": {
+          "richContent": [ [ {
+            "options": [ {
+              "text": "Competitors"
+            }, {
+              "text": "Stakeholders"
+            } ],
+            "type": "chips"
+          } ] ]
         },
         "languageCode": "en"
       } ]

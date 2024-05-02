@@ -28,6 +28,7 @@
     "name": "99e8f151-6831-44ec-8d1a-98ef0be821d9"
   }, {
     "intent": "redirect.home",
+    "condition": "true",
     "triggerFulfillment": {
     
     },
@@ -53,6 +54,7 @@
     "name": "11fdffff-0552-47a9-9c48-bb84d234426d"
   }, {
     "intent": "redirect.competitors.questions",
+    "condition": "true",
     "triggerFulfillment": {
     
     },
@@ -100,6 +102,7 @@
         "languageCode": "en"
       } ]
     },
+    "targetPage": "End Session",
     "name": "b075064d-89bd-47ae-aee1-e6e37ab9cd93"
   }, {
     "intent": "real-person-technical-issue",
@@ -111,6 +114,7 @@
         "languageCode": "en"
       } ]
     },
+    "targetPage": "End Session",
     "name": "669ab2f3-9247-4e3a-90a3-96607895abb3"
   }, {
     "condition": "$session.params.restart = \"true\"",
@@ -129,7 +133,7 @@
     "triggerFulfillment": {
       "messages": [ {
         "text": {
-          "text": [ "Sorry, I didnt get that. I can answer your questions about our competitors and stakeholders. \nHow may I help you today?" ]
+          "text": [ "Sorry, I didn't get that. I can answer your questions about our competitors and stakeholders. \nHow may I help you today?" ]
         },
         "languageCode": "en"
       }, {

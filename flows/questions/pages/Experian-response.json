@@ -2,21 +2,50 @@
   "name": "b1395965-8ac2-42cb-a17c-1cd04eaa7cb2",
   "displayName": "Experian-response",
   "form": {
-    "parameters": [ {
-      "displayName": "competitors",
-      "required": true,
-      "entityType": "@competitors",
-      "fillBehavior": {
-        "initialPromptFulfillment": {
-        
-        }
-      },
-      "redact": true
-    } ]
+  
   },
   "entryFulfillment": {
   
   },
+  "transitionRoutes": [ {
+    "intent": "confirm.proceed.question",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Experian",
+    "name": "609e7811-76e5-4f70-89aa-bd9025236eb2"
+  }, {
+    "intent": "redirect.firstpage",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Session",
+    "name": "4400a5dc-0bbe-43e8-939d-684afef0bc67"
+  }, {
+    "intent": "real-person-technical-issue",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I understand you ran into a technical issue. You can reach out to Sara Mousavinia , 888-888-8888. Thanks for contacting us. Have a wonderful day $session.params.name!" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "End Flow",
+    "name": "e4d86929-8827-4035-9aa2-d74860fc17a5"
+  }, {
+    "intent": "real-person-business-issue",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I understand you want to talk to a real person. If you have questions about stakeholders you can call DuWayne Milner, 000-000-0000. If you have any question about our competitors you can reach out to Kristen Horst, 999-999-9999. Have a wonderful day $session.params.name!" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "End Flow",
+    "name": "c9667b17-3530-49b2-a77b-b60e4cf5ef94"
+  } ],
   "eventHandlers": [ {
     "targetPage": "Experian",
     "event": "sys.no-match-default",
@@ -38,10 +67,20 @@
           "text": [ "$request.knowledge.answers[0]" ]
         },
         "languageCode": "en"
+      }, {
+        "languageCode": "en",
+        "knowledgeInfoCard": {
+          "maximumSnippets": 1
+        }
+      }, {
+        "text": {
+          "text": [ "Is there anything else I can help you with today?" ]
+        },
+        "languageCode": "en"
       } ],
       "generators": [ {
         "generator": "projects/glossy-motif-418020/locations/us-central1/agents/712304b6-e8c1-41c1-b6dd-80ddb18703ef/generators/56ada6bb-5455-4756-ab82-635fdaea62cd",
-        "outputParameter": "$request.generative.answer[0]"
+        "outputParameter": "$request.generative.answers[0]"
       } ]
     },
     "dataStoreConnections": [ {

@@ -7,6 +7,8 @@
     "business": "EFX",
     "agent": "EFX-FinSmart",
     "agentIdentity": "Chatbot",
+    "businessDescription": "Financial Technology",
+    "agentScope": "using data in datastore",
     "llmModelSettings": {
     
     },

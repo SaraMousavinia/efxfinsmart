@@ -103,6 +103,7 @@
         "languageCode": "en"
       } ]
     },
+    "targetPage": "End Session",
     "name": "5b64901f-70aa-43cd-98a6-aeb965cbd880"
   }, {
     "intent": "real-person-technical-issue",
@@ -114,6 +115,7 @@
         "languageCode": "en"
       } ]
     },
+    "targetPage": "End Session",
     "name": "cd7d9844-5e82-496e-86aa-b7f1710ea665"
   } ]
 }

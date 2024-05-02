@@ -34,7 +34,7 @@
           "triggerFulfillment": {
             "messages": [ {
               "text": {
-                "text": [ "Sorry I didnt get that. About which competitors you wanna know?" ]
+                "text": [ "Sorry, I didn't get that. About which competitors do you want to know more?" ]
               },
               "languageCode": "en"
             }, {
@@ -59,7 +59,7 @@
           "triggerFulfillment": {
             "messages": [ {
               "text": {
-                "text": [ "To go forward, we need to know which competitor you would like to ask about?" ]
+                "text": [ "To go forward, we need to know about which competitors do you want to know more?" ]
               },
               "languageCode": "en"
             }, {
@@ -157,6 +157,7 @@
         "languageCode": "en"
       } ]
     },
+    "targetPage": "End Session",
     "name": "96ff8a92-ccde-4e35-b9fa-a9cc3f24f97f"
   }, {
     "intent": "real-person-technical-issue",
@@ -168,6 +169,7 @@
         "languageCode": "en"
       } ]
     },
+    "targetPage": "End Session",
     "name": "301281ee-1a53-45ab-ba16-ffb4d90615bd"
   }, {
     "condition": "$page.params.status = \"FINAL\"",

@@ -2,6 +2,5 @@
   "name": "48c1fbfe-b41b-42f9-ade6-a8acbb88bace",
   "displayName": "competitors",
   "kind": "KIND_MAP",
-  "enableFuzzyExtraction": true,
-  "redact": true
+  "enableFuzzyExtraction": true
 }

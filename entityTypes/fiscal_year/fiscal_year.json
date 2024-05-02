@@ -1,6 +1,5 @@
 {
   "name": "b449fc3d-4eff-4a5a-af1a-ee3554384cc2",
   "displayName": "fiscal_year",
-  "kind": "KIND_MAP",
-  "redact": true
+  "kind": "KIND_MAP"
 }

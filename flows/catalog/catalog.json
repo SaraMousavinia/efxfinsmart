@@ -2,31 +2,6 @@
   "name": "40c58bc6-0ffe-4a1e-aad0-f1feb99b00a7",
   "displayName": "catalog",
   "transitionRoutes": [ {
-    "intent": "redirect.end",
-    "condition": "$session.params.restart = \"true\"",
-    "triggerFulfillment": {
-      "messages": [ {
-        "text": {
-          "text": [ "Welcome back, this is EFX-FinSmart Virtual assistant. What are your areas of interest to ask about?" ]
-        },
-        "languageCode": "en"
-      }, {
-        "payload": {
-          "richContent": [ [ {
-            "options": [ {
-              "text": "Competitores"
-            }, {
-              "text": "Stakeholders"
-            } ],
-            "type": "chips"
-          } ] ]
-        },
-        "languageCode": "en"
-      } ]
-    },
-    "targetPage": "End Flow",
-    "name": "99e8f151-6831-44ec-8d1a-98ef0be821d9"
-  }, {
     "intent": "redirect.home",
     "condition": "true",
     "triggerFulfillment": {
@@ -44,17 +19,18 @@
         "languageCode": "en"
       } ]
     },
+    "targetPage": "End Session",
     "name": "e3180383-5527-46db-badb-664e11442ae1"
   }, {
     "intent": "redirect.stakeholders.overview",
+    "condition": "true",
     "triggerFulfillment": {
     
     },
-    "targetPage": "competitors overview",
+    "targetPage": "stakeholders overview",
     "name": "11fdffff-0552-47a9-9c48-bb84d234426d"
   }, {
     "intent": "redirect.competitors.questions",
-    "condition": "true",
     "triggerFulfillment": {
     
     },
@@ -92,6 +68,19 @@
     },
     "targetPage": "competitors question",
     "name": "7e2f0c29-6045-490f-94f7-e96c5217d9ef"
+  }, {
+    "intent": "redirect.end",
+    "condition": "$session.params.restart = \"true\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Welcome back, this is EFX-FinSmart Virtual assistant. What are your areas of interest to ask about? Competitors or Stakeholders?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "End Flow",
+    "name": "99e8f151-6831-44ec-8d1a-98ef0be821d9"
   }, {
     "intent": "real-person-business-issue",
     "triggerFulfillment": {
@@ -133,7 +122,7 @@
     "triggerFulfillment": {
       "messages": [ {
         "text": {
-          "text": [ "Sorry, I didn't get that. I can answer your questions about our competitors and stakeholders. \nHow may I help you today?" ]
+          "text": [ "Sorry, I didnt get that. I can answer your questions about our competitors and stakeholders. \nHow may I help you today?" ]
         },
         "languageCode": "en"
       }, {

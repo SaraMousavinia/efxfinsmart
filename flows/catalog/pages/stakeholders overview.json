@@ -127,20 +127,6 @@
         "text": [ "We have data of US Bank, Bank of America, and Wells Fargo. Which one I can help you with?" ]
       },
       "languageCode": "en"
-    }, {
-      "payload": {
-        "richContent": [ [ {
-          "options": [ {
-            "text": "US.Bank"
-          }, {
-            "text": "Bank of America"
-          }, {
-            "text": "Wells Fargo"
-          } ],
-          "type": "chips"
-        } ] ]
-      },
-      "languageCode": "en"
     } ]
   },
   "transitionRoutes": [ {
@@ -155,6 +141,18 @@
     },
     "targetPage": "End Session",
     "name": "43808070-f05d-4fe6-b89f-939517f105ca"
+  }, {
+    "intent": "redirect.home",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I have information about stakeholders and competitors. To ask questions about Equifax, Experian, or TransUnion, type \"competitors\", otherwise type \"stakeholders\" if you have any question about US Bank, Bank of America, or Wells Fargo." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Previous Page",
+    "name": "d731a675-a145-44f7-bf05-ab7c51a05a6a"
   } ],
   "description": "Stakeholder Overview"
 }

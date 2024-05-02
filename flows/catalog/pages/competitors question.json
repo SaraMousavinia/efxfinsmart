@@ -10,21 +10,7 @@
         "initialPromptFulfillment": {
           "messages": [ {
             "text": {
-              "text": [ "Which competitor you need to know about?" ]
-            },
-            "languageCode": "en"
-          }, {
-            "payload": {
-              "richContent": [ [ {
-                "options": [ {
-                  "text": "Equifax"
-                }, {
-                  "text": "Experian"
-                }, {
-                  "text": "TransUnion"
-                } ],
-                "type": "chips"
-              } ] ]
+              "text": [ "Which competitor you need to know about? Experian, Equifax, or TransUnion?" ]
             },
             "languageCode": "en"
           } ]
@@ -59,7 +45,7 @@
           "triggerFulfillment": {
             "messages": [ {
               "text": {
-                "text": [ "To go forward, we need to know about which competitors do you want to know more?" ]
+                "text": [ "To go forward, we need to know which competitor. About which competitors do you want to know more?" ]
               },
               "languageCode": "en"
             }, {
@@ -119,13 +105,6 @@
     "targetPage": "Confirmation",
     "name": "f5c3eba8-d42f-4ef3-93b0-32d1c42b911b"
   }, {
-    "intent": "redirect.home",
-    "triggerFulfillment": {
-    
-    },
-    "targetPage": "End Flow",
-    "name": "e13e3955-2ed5-4fa4-949e-005079df4773"
-  }, {
     "intent": "decline.proceed.question",
     "triggerFulfillment": {
       "setParameterActions": [ {
@@ -135,6 +114,13 @@
     },
     "targetPage": "End Flow",
     "name": "ba05402f-d101-40fd-8fd4-9ccea11867f9"
+  }, {
+    "intent": "redirect.home",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Flow",
+    "name": "e13e3955-2ed5-4fa4-949e-005079df4773"
   }, {
     "intent": "redirect.firstpage",
     "triggerFulfillment": {

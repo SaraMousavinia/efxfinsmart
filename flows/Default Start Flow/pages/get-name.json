@@ -13,6 +13,13 @@
     } ]
   },
   "transitionRoutes": [ {
+    "intent": "redirect.home",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "catalog",
+    "name": "f303ece1-eb59-43dc-b575-c5b6a8df0b22"
+  }, {
     "intent": "redirect.competitors.questions",
     "triggerFulfillment": {
     
@@ -57,19 +64,7 @@
     "triggerFulfillment": {
       "messages": [ {
         "text": {
-          "text": [ "I hope you're having a wonderful day, $session.params.name ! Thanks for reaching out to EFX-FinSmart. I can answer your questions about our competitors and stakeholders. Throughout the conversation, you can say \"exit\" to return to this menu.\nHow may I help you today?" ]
-        },
-        "languageCode": "en"
-      }, {
-        "payload": {
-          "richContent": [ [ {
-            "options": [ {
-              "text": "Competitors"
-            }, {
-              "text": "Stakeholders"
-            } ],
-            "type": "chips"
-          } ] ]
+          "text": [ "I hope you're having a wonderful day, $session.params.name ! Thanks for reaching out to EFX-FinSmart. I can answer your questions about our competitors and stakeholders. Say \"competitors\" or \"Stakeholders\" to proceed the conversation. Throughout the conversation, you can say \"exit\" to return to this menu." ]
         },
         "languageCode": "en"
       } ]
@@ -101,34 +96,16 @@
     "targetPage": "End Session",
     "name": "97b27589-7010-4007-8413-c2392d72d39c"
   }, {
-    "intent": "redirect.home",
-    "triggerFulfillment": {
-    
-    },
-    "targetFlow": "catalog",
-    "name": "8cb78a10-3b65-4350-a3eb-e80b3f2af3ea"
-  }, {
     "condition": "$session.params.restart = \"true\"",
     "triggerFulfillment": {
       "messages": [ {
         "text": {
-          "text": [ "Welcome back, this is EFX-FinSmart Virtual assistant. What are your areas of interest to ask about?" ]
-        },
-        "languageCode": "en"
-      }, {
-        "payload": {
-          "richContent": [ [ {
-            "options": [ {
-              "text": "Competitores"
-            }, {
-              "text": "Stakeholders"
-            } ],
-            "type": "chips"
-          } ] ]
+          "text": [ "Welcome back, this is EFX-FinSmart Virtual assistant. What are your areas of interest to ask about? Competitors or stakeholders?" ]
         },
         "languageCode": "en"
       } ]
     },
+    "targetFlow": "catalog",
     "name": "7e2ee093-ea0d-4497-95b3-f0b03d089cf5"
   }, {
     "condition": "$session.params.competitors = \"Experian\" OR $session.params.competitors = \"TransUnion\" OR $session.params.competitors = \"Equifax\" OR $session.params.competitors = \"USBank\" OR $session.params.competitors = \"Wells Fargo\" OR $session.params.competitors = \"Bank of America\"",
@@ -143,7 +120,7 @@
     "triggerFulfillment": {
       "messages": [ {
         "text": {
-          "text": [ "Sorry, I didn't get that. I can answer your questions about our competitors and stakeholders. \nHow may I help you today?" ]
+          "text": [ "Sorry, I didnt get that. I can answer your questions about our competitors and stakeholders. \nHow may I help you today?" ]
         },
         "languageCode": "en"
       }, {
@@ -166,7 +143,7 @@
     "triggerFulfillment": {
       "messages": [ {
         "text": {
-          "text": [ "Sorry, I didn't get that. I can answer your questions about our competitors and stakeholders. \nHow may I help you today?" ]
+          "text": [ "Sorry, I didnt get that. I can answer your questions about our competitors and stakeholders. \nHow may I help you today?" ]
         },
         "languageCode": "en"
       }, {
